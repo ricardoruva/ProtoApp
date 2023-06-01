@@ -1,4 +1,4 @@
-# Proyecto de residencias
+# Proyecto de residencias - (ProtoApp)
 
 Este proyecto es una aplicación desarrollada en React con NextJS y TypeScript.
 
