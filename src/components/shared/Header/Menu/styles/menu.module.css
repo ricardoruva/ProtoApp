@@ -1,0 +1,96 @@
+.isLoginMenu {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  gap: 0.5rem;
+  color: #333333;
+  background-color: #FFFFFF;
+  border-width: 1px;
+}
+
+.isLoginMenu>.image {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-size: cover;
+  background-position: center; 
+}
+
+.isLoginMenu>.noImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #FF716C;
+  font-family: Google Sans;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+
+.isLoginMenu>.info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.isLoginMenu>.info>h4 {
+  font-family: Google Sans;
+  font-weight: 400;
+  color: #E94242;
+  font-size: 0.9rem;
+}
+
+.isLoginMenu>.info>h5 {
+  font-family: Google Sans;
+  font-weight: 400;
+  color: #333333;
+  font-size: 0.8rem;
+}
+
+.button {
+  display: flex;
+  gap: 0.2rem;
+  align-items: center;
+  padding: 0.75rem;
+	width: 100%;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+}
+
+.button>.icon {
+  width: 1.3rem;
+  height: 1.3rem;
+  color: #333333;
+}
+
+.button>.text {
+  font-family: Google Sans;
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: #333333;
+}
+
+.button:hover {
+  background-color: #E94242;
+}
+
+@media (min-width: 1367px) {
+  .isLoginMenu {
+    display: none;
+  }
+
+  .button>.icon {
+    width: 1.3rem;
+    height: 1.3rem;
+    color: #FFFFFF;
+  }
+
+  .button>.text {
+    font-family: Google Sans;
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: #FFFFFF;
+  }
+}

@@ -1,0 +1,19 @@
+body {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  margin: auto;
+  max-width: 80rem;
+  min-height: 100vh;
+
+  background-color: #F0F5FA;
+
+  transition: background-color 0.3s;
+}
+
+@media (min-width: 80rem) {
+  body {
+    max-width: 100%;
+  }
+}

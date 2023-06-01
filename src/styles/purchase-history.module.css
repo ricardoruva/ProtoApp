@@ -1,0 +1,50 @@
+.purchaseHistory {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	margin: 5rem 1rem 1rem 1rem;
+	padding: 1rem;
+	min-height: calc(100vh - 13.8rem);
+	background-color: #ffffff;
+	box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.1);
+}
+
+.purchaseHistory > h3 {
+	font-family: Google Sans;
+	font-weight: 500;
+	color: #333333;
+	text-align: center;
+}
+
+.purchaseHistory > .purchaseSection {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.purchaseHistory > .noPurchase {
+	min-height: calc(100vh - 11rem);
+	justify-content: center;
+}
+
+.purchaseHistory > .noPurchase > h2 {
+	font-family: Google Sans;
+	font-weight: 700;
+	text-align: center;
+	color: #333333;
+}
+
+.purchaseHistory > .purchaseSection > .card {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	gap: 0.1rem;
+}
+
+@media (min-width: 80rem) {
+	.purchaseHistory {
+		max-width: 80rem;
+		margin: auto;
+		margin-top: 5rem;
+	}
+}

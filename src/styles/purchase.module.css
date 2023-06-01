@@ -1,0 +1,15 @@
+.summaryPurchase {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+}
+
+@media (min-width: 80rem) {
+  .summaryPurchase {
+    max-width: 80rem;
+    margin: auto;
+    flex-direction: row;
+    gap: 0rem;
+  }
+}

@@ -1,0 +1,70 @@
+.carouselContainer {
+  position: relative;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-inline: 1rem;
+}
+
+.carouselContainer>div {
+  max-width: 80rem;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0px 2px 8px rgba(0 , 0, 0, 0.05);
+}
+
+.carouselContainer>div>div {
+  width: 400%;
+}
+
+.carouselContainer>div>div>.styledCarousel {
+  width: 100%;
+
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+
+  transition: all 1s;
+}
+
+.carouselContainer>div>div>.styledCarousel>.link {
+  width: 100%;
+  height: 12rem;
+}
+
+.carouselContainer>div>div>.styledCarousel>.link>.styledImage {
+  width: 100%;
+  height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+@media (min-width: 80rem) {
+  .carouselContainer {
+    overflow: hidden;
+  }
+  
+  .carouselContainer>div {
+    max-width: 90%;
+    overflow: visible;
+    border-radius: 0px;
+    box-shadow: none;
+  }
+
+  .carouselContainer>div>div>.styledCarousel {
+    gap: 2rem;
+  }
+
+	.carouselContainer>div>div>.styledCarousel>.link {
+		width: 100%;
+		height: auto;
+	}
+
+  .carouselContainer>div>div>.styledCarousel>.link {
+    border-radius: 0.75rem;
+    overflow: hidden;
+    box-shadow: 0px 2px 8px rgba(0 , 0, 0, 0.05);
+  }
+}

@@ -1,0 +1,114 @@
+.footer {
+  position: relative;
+  width: 100%;
+  background-color: #FFFFFF;
+  border-top: 1px solid #E5EDEF;
+  margin-top: 1rem;
+}
+
+.footer>.sectionsFooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-bottom: 1px solid #E5EDEF;
+}
+
+.footer>.sectionsFooter>.sectionFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1rem;
+  gap: 0.5rem;
+}
+
+.footer>.sectionsFooter>.border {
+  border-top: 1px solid #E5EDEF;
+  border-bottom: 1px solid #E5EDEF;
+}
+
+.footer>h5,
+.footer>.sectionsFooter>.sectionFooter>h5,
+.footer>.sectionsFooter>.sectionFooter>.link>h5,
+.footer>.sectionsFooter>.sectionFooter>.links>.link {
+  font-family: Google Sans;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #333333;
+  text-align: center;
+}
+
+.footer>.sectionsFooter>.sectionFooter>.icons {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.footer>.sectionsFooter>.sectionFooter>.link>.icon,
+.footer>.sectionsFooter>.sectionFooter>.icons>.linkIcon>.icon {
+  width: 1.3rem;
+  height: 1.3rem;
+  color: #E94242;
+}
+
+.footer>.sectionsFooter>.sectionFooter>.links {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 1rem;
+}
+
+.footer>h5,
+.footer>.sectionsFooter>.sectionFooter>.link>h5,
+.footer>.sectionsFooter>.sectionFooter>.links>.link {
+  font-weight: 400;
+}
+
+.footer>.sectionsFooter>.sectionFooter>.link:hover>h5,
+.footer>.sectionsFooter>.sectionFooter>.link:hover>.icon,
+.footer>.sectionsFooter>.sectionFooter>.links>.link:hover {
+  color: #E94242;
+}
+
+.footer>.sectionsFooter>.sectionFooter>.link {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.footer>.sectionsFooter>.sectionFooter>.link>.icon {
+  color: #333333;
+}
+
+.footer>h5 {
+  width: 100%;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+@media (min-width: 1367px) {
+  .footer {
+    position: relative;
+    width: 100%;
+    background-color: #FFFFFF;
+    border-top: 1px solid #E5EDEF;
+    border-left: 1px solid #E5EDEF;
+    border-right: 1px solid #E5EDEF;
+    margin-top: 1rem;
+  }
+
+  .footer>.sectionsFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid #E5EDEF;
+  }
+
+  .footer>.sectionsFooter>.border {
+    border-top: none;
+    border-bottom: none;
+    border-left: 1px solid #E5EDEF;
+    border-right: 1px solid #E5EDEF;
+  }
+}

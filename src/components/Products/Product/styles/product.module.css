@@ -1,0 +1,195 @@
+.form {
+	width: 100%;
+}
+
+.form > .card {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100%;
+	gap: 1rem;
+	height: auto;
+	padding: 1rem;
+	border: 1px solid #dce3e8;
+	background-color: #f0f5fa;
+}
+
+.form > .card > .startSectionCard {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 100%;
+	gap: 0.5rem;
+}
+
+.form > .card > .startSectionCard > .imageButton {
+	position: relative;
+	width: 100%;
+}
+
+.form > .card > .startSectionCard > .imageButton > .image {
+	width: 100%;
+	height: 10rem;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 8px;
+}
+
+.form > .card > .startSectionCard > .imageButton > .button {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	border: 2px solid #ff716c;
+	padding: 0.3rem 0.8rem;
+	width: 3rem;
+	height: 3rem;
+	font-family: Google Sans;
+	font-weight: 700;
+	color: #ffffff;
+	background-color: #e94242;
+	border-radius: 0.5rem;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+.form > .card > .startSectionCard > .imageButton > .button:hover {
+	background-color: #c02e2e;
+}
+
+.form > .card > .startSectionCard > h2 {
+	font-family: Google Sans;
+	font-style: normal;
+	font-weight: 500;
+	color: #333333;
+}
+
+.form > .card > .startSectionCard > h4 {
+	font-family: Google Sans;
+	font-style: normal;
+	font-weight: 500;
+	color: #333333;
+	width: 100%;
+	opacity: 0.8;
+}
+
+.form > .card > .endSectionCard {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	gap: 0.5rem;
+}
+
+.form > .card > .endSectionCard > .threePrices {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	width: 100%;
+}
+
+.form > .card > .endSectionCard > .onePrice {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	height: 2rem;
+	gap: 0.5rem;
+}
+
+.form > .card > .endSectionCard > .threePrices > div {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	height: 2rem;
+	width: 100%;
+	gap: 0.5rem;
+}
+
+.form > .card > .endSectionCard > .threePrices > div > .predefinedPrice {
+	font-family: Google Sans;
+	font-weight: 400;
+	color: #333333;
+	padding: 0.4rem 0.8rem;
+	outline: none;
+	width: 100%;
+	border: 1px solid #ced4da;
+	border-radius: 0.35rem;
+	background-color: #ffffff;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+.form > .card > .endSectionCard > .threePrices > div > .selectPredefinedPrice,
+.form > .card > .endSectionCard > .threePrices > div > .predefinedPrice:hover {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.form > .card > .endSectionCard > div > h4 {
+	font-family: Google Sans;
+	font-style: normal;
+	font-weight: 500;
+	color: #333333;
+}
+
+.form > .card > .endSectionCard > .quantity > h4 {
+	font-family: Google Sans;
+	font-weight: 400;
+	color: #333333;
+	padding: 0.4rem 0.8rem;
+	outline: none;
+	border: 1px solid #ced4da;
+	border-right: none;
+	border-radius: 0.35rem 0rem 0rem 0.35rem;
+	background-color: #ffffff;
+	transition: all 0.3s;
+}
+
+.form > .card > .endSectionCard > .quantity > input {
+	font-family: Google Sans;
+	font-weight: 400;
+	color: #333333;
+	padding: 0.4rem 0.8rem;
+	outline: none;
+	border: 1px solid #ced4da;
+	border-radius: 0rem 0.35rem 0.35rem 0rem;
+	background-color: #ffffff;
+	transition: all 0.3s;
+	width: 100%;
+}
+
+.form > .card > .endSectionCard > .quantity {
+	margin-top: 0.5rem;
+	display: flex;
+	flex-direction: row;
+	gap: 0rem;
+	width: 100%;
+}
+
+.form > .card > .endSectionCard > .addToCart {
+	border: 2px solid #ff716c;
+	padding: 0.3rem 0.8rem;
+	font-family: Google Sans;
+	font-weight: 700;
+	color: #ffffff;
+	background-color: #e94242;
+	border-radius: 0.5rem;
+	transition: all 0.3s;
+	cursor: pointer;
+}
+
+.form > .card > .endSectionCard > .addToCart:hover {
+	background-color: #c02e2e;
+}
+
+@media (min-width: 82rem) {
+	.form {
+		width: 32.45%;
+	}
+
+	.form > .card > .startSectionCard > .imageButton > .image {
+		height: 14rem;
+	}
+
+	.form > .card > .endSectionCard > .threePrices {
+		flex-direction: row;
+		align-items: center;
+	}
+}

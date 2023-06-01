@@ -1,0 +1,330 @@
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 60;
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.sections {
+  z-index: 102;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.sections>.presentation {
+  position: relative;
+  z-index: 102;
+  width: 100%;
+  height: 11rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sections>.presentation>.image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(/img/login-background.jpg);
+  background-position: center;
+  background-size: cover;
+  filter: blur(0.5rem);
+  z-index: 403;
+}
+
+.sections>.presentation>.blackFilter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 404;
+}
+
+.sections>.presentation>h1 {
+  z-index: 102;
+  margin-top: 1.5rem;
+  position: relative;
+  z-index: 405;
+  color: #FFFFFF;
+  font-family: Google Sans;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.sections>.presentation>.registrationButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  z-index: 405;
+  position: relative;
+  padding: 1rem 1.5rem;
+  gap: 0.5rem;
+}
+
+.sections>.presentation>.registrationButton>h3 {
+  font-family: Google Sans;
+  font-weight: 500;
+  color: #FFFFFF;
+  font-size: 1.1rem;
+}
+
+.sections>.presentation>.registrationButton>button {
+  font-family: Google Sans;
+  font-weight: 500;
+  color: #FFFFFF;
+  font-size: 1rem;
+  background-color: transparent;
+  padding: 0.2rem 1rem;
+  border-radius: 8px;
+  border-color: #FFFFFF;
+  outline: none;
+  border-style: solid;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.sections>.presentation>.registrationButton>button:hover {
+  color: #333333;
+  background-color: #FFFFFF;
+}
+
+
+.sections>.login,
+.sections>.register {
+  z-index: 102;
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 11rem);
+  padding: 1rem;
+  background-color: #FFFFFF;
+}
+
+.sections>.login>.close,
+.sections>.register>.close {
+  z-index: 102;
+  display: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #333333;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  cursor: pointer;
+}
+
+.sections>.login>.loginForm,
+.sections>.register>.registerForm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  gap: 2rem;
+  padding: 2.5rem 3rem;
+}
+
+.sections>.login>.loginForm>h2,
+.sections>.register>.registerForm>h2 {
+  font-family: Google Sans;
+  font-weight: 500;
+  color: #333333;
+}
+
+.sections>.login>.loginForm>.inputs,
+.sections>.register>.registerForm>.inputs {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+}
+
+.sections>.login>.loginForm>.inputs>.labelInput,
+.sections>.register>.registerForm>.inputs>.labelInput,
+.sections>.register>.registerForm>.inputs>.uploadImage>.labelInput {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.sections>.login>.loginForm>.inputs>.labelInput>label,
+.sections>.register>.registerForm>.inputs>.labelInput>label,
+.sections>.login>.loginForm>.inputs>.labelInput>.labelPassword>label,
+.sections>.register>.registerForm>.inputs>.uploadImage>.labelInput>label,
+.sections>.register>.registerForm>.inputs>.labelInput>.labelPassword>label,
+.sections>.login>.loginForm>.inputs>.labelInput>.labelPassword>.showPassword,
+.sections>.register>.registerForm>.inputs>.labelInput>.labelPassword>.showPassword {
+  font-family: Google Sans;
+  font-weight: 400;
+  color: #333333;
+  font-size: 0.9rem;
+}
+
+.sections>.login>.loginForm>.inputs>.labelInput>input,
+.sections>.register>.registerForm>.inputs>.labelInput>input {
+  font-family: Google Sans;
+  font-weight: 400;
+  color: #333333;
+  padding: 0.4rem 0.8rem;
+  outline: none;
+  border: 1px solid #CED4DA;
+  border-radius: 0.35rem;
+  background-color: #F0F5FA;
+  transition: all 0.3s;
+  width: 100%;
+}
+
+.sections>.login>.loginForm>.inputs>.labelInput>input:focus,
+.sections>.register>.registerForm>.inputs>.labelInput>input:focus {
+  outline: none;
+  border-color: #80BDFF;
+  box-shadow: 0px 0px 0px 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.sections>.login>.loginForm>.errorMessage,
+.sections>.register>.registerForm>.errorMessage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  background-color: #E94242;
+  border-radius: 0.5rem;
+}
+
+.sections>.login>.loginForm>.errorMessage>h3,
+.sections>.register>.registerForm>.errorMessage>h3 {
+  font-family: Google Sans;
+  font-weight: 500;
+  color: #FFFFFF;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.sections>.login>.loginForm>button,
+.sections>.register>.registerForm>button,
+.sections>.register>.registerForm>.inputs>.uploadImage>.labelInput>input::file-selector-button {
+  font-family: Google Sans;
+  font-weight: 500;
+  color: #FFFFFF;
+  background-color: #E94242;
+  border: 2px solid #FF716C;
+  cursor: pointer;
+  padding: 0.25rem 1rem;
+  outline: none;
+  border-radius: 0.5rem;
+  transition: all 0.3s;
+}
+
+.sections>.register>.registerForm>.inputs>.uploadImage>.labelInput>input::file-selector-button {
+  width: 100%;
+}
+
+.sections>.login>.loginForm>button:hover,
+.sections>.register>.registerForm>button:hover,
+.sections>.register>.registerForm>.inputs>.uploadImage>.labelInput>input::file-selector-button:hover {
+  background-color: #C02E2E;
+}
+
+.sections>.login>.loginForm>.inputs>.labelInput>.labelPassword>.showPassword:hover,
+.sections>.register>.registerForm>.inputs>.labelInput>.labelPassword>.showPassword:hover {
+  color: #E94242;
+  cursor: pointer;
+}
+
+.sections>.register>.registerForm>.inputs>.uploadImage {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+}
+
+.sections>.register>.registerForm>.inputs>.uploadImage>.profilePicture {
+  min-width: 6rem;
+  height: 6rem;
+
+  border: 1px solid #333333;
+	object-fit: cover;
+	object-position: center;
+}
+
+.sections>.register>.registerForm>.inputs>.uploadImage>.labelInput {
+  width: calc(100% - 7rem);
+}
+
+.sections>.register>.registerForm>.inputs>.uploadImage>.labelInput>h5 {
+  font-family: Google Sans;
+  color: #333333;
+  opacity: 0.6;
+  font-weight: 400;
+}
+
+.sections>.register>.registerForm>.inputs>.uploadImage>.labelInput>input {
+  font-family: Google Sans;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+@media (min-width: 597px) {
+  .sections>.register>.registerForm>.inputs>.uploadImage>.labelInput {
+    width: calc(100% - 6rem);
+  }
+}
+
+@media (min-width: 1367px) {
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    z-index: 101;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .sections {
+    z-index: 102;
+    width: 45rem;
+    height: 44rem;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .sections>.presentation {
+    position: relative;
+    width: 18rem;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .sections>.login,
+  .sections>.register {
+    position: relative;
+    width: 27rem;
+    height: 100%;
+    padding: 1rem;
+  }
+}

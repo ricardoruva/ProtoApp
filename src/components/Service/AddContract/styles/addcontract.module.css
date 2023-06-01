@@ -1,0 +1,144 @@
+.background {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 101;
+	opacity: 0.5;
+	background-color: #000000;
+}
+
+.addContract {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 102;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.addContract > .form {
+	position: relative;
+	z-index: 103;
+	width: 100%;
+	height: 100%;
+	padding: 2rem;
+	background-color: #ffffff;
+	display: flex;
+	flex-direction: column;
+	gap: 0.8rem;
+}
+
+.addContract > .form > h2 {
+	font-family: Google Sans;
+	color: #333333;
+	font-weight: 700;
+	text-align: center;
+}
+
+.addContract > .form > .image {
+	width: 100%;
+	height: 10rem;
+	border: 1px solid #333333;
+	border-radius: 0.5rem;
+	object-fit: cover;
+	object-position: center;
+	transition: all 0.3s;
+}
+
+.addContract > .form > .labelInput {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.addContract > .form > .labelInput > label {
+	font-family: Google Sans;
+	color: #333333;
+	font-weight: 500;
+}
+
+.addContract > .form > .labelInput > .cashback {
+	display: flex;
+	align-items: center;
+}
+
+.addContract > .form > .labelInput > input:not(.file),
+.addContract > .form > .labelInput > .cashback > input {
+	font-family: Google Sans;
+	font-weight: 400;
+	color: #333333;
+	padding: 0.4rem 0.8rem;
+	outline: none;
+	border: 1px solid #ced4da;
+	border-radius: 0.35rem;
+	background-color: #f0f5fa;
+	transition: all 0.3s;
+	width: 100%;
+}
+
+.addContract > .form > .labelInput > .file::file-selector-button {
+	border: 2px solid #ff716c;
+	padding: 0.3rem 0.8rem;
+	font-family: Google Sans;
+	font-weight: 700;
+	width: 100%;
+	color: #ffffff;
+	background-color: #e94242;
+	border-radius: 0.5rem;
+	cursor: pointer;
+}
+
+.addContract > .form > .labelInput > .file::file-selector-button:hover {
+	background-color: #c02e2e;
+}
+
+.addContract > .form > .labelInput > .cashback > input {
+	border-radius: 0.35rem 0rem 0rem 0.35rem;
+}
+
+.addContract > .form > .labelInput > .cashback > h3 {
+	font-family: Google Sans;
+	font-weight: 400;
+	color: #333333;
+	font-size: 1rem;
+	padding: 0.4rem 0.8rem;
+	outline: none;
+	border: 1px solid #ced4da;
+	border-left: 1px none transparent;
+	border-radius: 0rem 0.35rem 0.35rem 0rem;
+	background-color: #ffffff;
+	transition: all 0.3s;
+}
+
+
+.addContract > .form > .buttons {
+	display: flex;
+	gap: 0.5rem;
+	width: 100%;
+}
+
+.addContract > .form > .button > .button {
+	width: 100%;
+}
+
+@media (min-width: 40rem) {
+	.addContract {
+		padding: 0rem 1rem;
+	}
+
+	.addContract > .form {
+		width: 40rem;
+		height: auto;
+		border-radius: 0.5rem;
+	}
+
+	.addContract > .form > .image {
+		height: 15rem;
+	}
+}

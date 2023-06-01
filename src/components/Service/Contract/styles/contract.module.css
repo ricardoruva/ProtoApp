@@ -1,0 +1,137 @@
+.form {
+	display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  gap: 1rem;
+  height: auto;
+  padding: 1rem;
+  border: 1px solid #DCE3E8;
+  background-color: #F0F5FA;
+}
+
+.form > .info {
+	display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  gap: 0.5rem;
+}
+
+.form > .info > .imageButton {
+	position: relative;
+	width: 100%;
+}
+
+.form > .info > .imageButton > .image {
+	width: 100%;
+  height: 10rem;
+  object-fit: cover;
+	object-position: center;
+  border-radius: 8px;
+}
+
+.form > .info > .imageButton > .button {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	border: 2px solid #ff716c;
+	padding: 0.3rem 0.8rem;
+	width: 3rem;
+	height: 3rem;
+	font-family: Google Sans;
+	font-weight: 700;
+	color: #ffffff;
+	background-color: #e94242;
+	border-radius: 0.5rem;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+.form > .info > .imageButton > .button:hover {
+	background-color: #c02e2e;
+}
+
+.form > .info > h2 {
+	font-family: Google Sans;
+  font-style: normal;
+  font-weight: 500;
+  color: #333333;
+}
+
+.form > .info > h4 {
+	font-family: Google Sans;
+  font-style: normal;
+  font-weight: 500;
+  color: #333333;
+  width: 100%;
+  opacity: 0.8;
+}
+
+.form > .inputs {
+	display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.5rem;
+}
+
+.form > .inputs > .labelInput {
+	display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form > .inputs > .labelInput > label {
+	font-family: Google Sans;
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: #333333;
+  white-space: nowrap;
+}
+
+.form > .inputs > .labelInput > .input {
+  display: flex;
+  gap: 0rem;
+  width: 100%;
+}
+
+.form > .inputs > .labelInput > .input > label {
+	font-family: Google Sans;
+  font-weight: 400;
+  color: #333333;
+  padding: 0.4rem 0.8rem;
+  outline: none;
+  border: 1px solid #CED4DA;
+  border-right: none;
+  border-radius: 0.35rem 0rem 0rem 0.35rem;
+  background-color: #FFFFFF;
+  transition: all 0.3s;
+}
+
+.form > .inputs > .labelInput > input,
+.form > .inputs > .labelInput > .input > input {
+  font-family: Google Sans;
+  font-weight: 400;
+  color: #333333;
+  padding: 0.4rem 0.8rem;
+  outline: none;
+  border: 1px solid #CED4DA;
+  border-radius: 0rem 0.35rem 0.35rem 0rem;
+  background-color: #FFFFFF;
+  transition: all 0.3s;
+  width: 100%;
+}
+
+.form > .inputs > .labelInput > input {
+	border-radius: 0.35rem;
+}
+
+@media (min-width: 82rem) {
+	.form {
+		width: 32.45%;
+	}
+
+	.form > .info > .imageButton > .image {
+		height: 14rem;
+	}
+}

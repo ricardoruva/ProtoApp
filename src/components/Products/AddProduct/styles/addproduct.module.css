@@ -1,0 +1,209 @@
+.button,
+.addProduct > .addProductCartel > .buttons > button,
+.addProduct > .addProductCartel > .labelInputFile > input::file-selector-button {
+	border: 2px solid #ff716c;
+	padding: 0.3rem 0.8rem;
+	font-family: Google Sans;
+	font-weight: 700;
+	color: #ffffff;
+	background-color: #e94242;
+	border-radius: 0.5rem;
+	cursor: pointer;
+}
+
+.iconButton {
+	height: 3rem;
+	width: 3rem;
+}
+
+.button:hover,
+.addProduct > .addProductCartel > .buttons > button:hover,
+.addProduct > .addProductCartel > .labelInputFile > input::file-selector-button:hover {
+	background-color: #c02e2e;
+}
+
+.addProduct {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.addProduct > .background {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 101;
+	opacity: 0.5;
+	background-color: #000000;
+}
+
+.addProduct > .addProductCartel {
+	position: relative;
+	z-index: 103;
+	width: 100%;
+	height: 100%;
+	padding: 2rem;
+	background-color: #ffffff;
+	display: flex;
+	flex-direction: column;
+	gap: 0.8rem;
+}
+
+.addProduct > .addProductCartel > h2 {
+	font-family: Google Sans;
+	color: #333333;
+	font-weight: 700;
+	text-align: center;
+}
+
+.addProduct > .addProductCartel > .styledImage {
+	width: 100%;
+	height: 10rem;
+	border: 1px solid #333333;
+	border-radius: 0.5rem;
+	object-fit: cover;
+	object-position: center;
+	transition: all 0.3s;
+}
+
+.addProduct > .addProductCartel > .typeCategory {
+	display: flex;
+	gap: 0.5rem;
+	width: 100%;
+}
+
+.addProduct > .addProductCartel > .labelInput,
+.addProduct > .addProductCartel > .labelInputFile,
+.addProduct > .addProductCartel > .typeCategory > .labelInput {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.addProduct > .addProductCartel > .labelInput > label,
+.addProduct > .addProductCartel > .labelInputFile > label,
+.addProduct > .addProductCartel > .typeCategory > .labelInput > label {
+	font-family: Google Sans;
+	color: #333333;
+	font-weight: 500;
+}
+
+.addProduct > .addProductCartel > .labelInputFile > h5 {
+	font-family: Google Sans;
+	color: #333333;
+	opacity: 0.8;
+	font-weight: 400;
+}
+
+.addProduct > .addProductCartel > .labelInputFile > input {
+	font-family: Google Sans;
+	color: #333333;
+	font-weight: 400;
+	width: 100%;
+}
+
+.addProduct > .addProductCartel > .labelInputFile > input::file-selector-button {
+	width: 100%;
+}
+
+.addProduct > .addProductCartel > .labelInput > .cashback {
+	display: flex;
+	align-items: center;
+}
+
+.addProduct > .addProductCartel > .labelInput > input,
+.addProduct > .addProductCartel > .labelInput > .inputs > input,
+.addProduct > .addProductCartel > .labelInput > .cashback > input {
+	font-family: Google Sans;
+	font-weight: 400;
+	color: #333333;
+	padding: 0.4rem 0.8rem;
+	outline: none;
+	border: 1px solid #ced4da;
+	border-radius: 0.35rem;
+	background-color: #f0f5fa;
+	transition: all 0.3s;
+	width: 100%;
+}
+
+.addProduct > .addProductCartel > .labelInput > .cashback > input {
+	border-radius: 0.35rem 0rem 0rem 0.35rem;
+}
+
+.addProduct > .addProductCartel > .labelInput > .cashback > h3 {
+	font-family: Google Sans;
+	font-weight: 400;
+	color: #333333;
+	font-size: 1rem;
+	padding: 0.4rem 0.8rem;
+	outline: none;
+	border: 1px solid #ced4da;
+	border-left: 1px none transparent;
+	border-radius: 0rem 0.35rem 0.35rem 0rem;
+	background-color: #ffffff;
+	transition: all 0.3s;
+}
+
+.addProduct > .addProductCartel > .labelInput > input:focus,
+.addProduct > .addProductCartel > .labelInput > .inputs > input:focus {
+	outline: none;
+	border-color: #80bdff;
+	box-shadow: 0px 0px 0px 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.addProduct > .addProductCartel > .labelInput > .inputs {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	gap: 0.5rem;
+	justify-content: space-between;
+}
+
+.addProduct > .addProductCartel > .typeCategory > .labelInput > select {
+	font-family: Google Sans;
+	font-weight: 400;
+	color: #333333;
+	padding: 0.4rem 0.8rem;
+	outline: none;
+	border: 1px solid #ced4da;
+	border-radius: 0.35rem;
+	background-color: #f0f5fa;
+	transition: all 0.3s;
+	width: 100%;
+	cursor: pointer;
+}
+
+.addProduct > .addProductCartel > .buttons {
+	display: flex;
+	gap: 0.5rem;
+	width: 100%;
+}
+
+.addProduct > .addProductCartel > .buttons > button {
+	width: 100%;
+}
+
+@media (min-width: 40rem) {
+	.addProduct {
+		padding: 0rem 1rem;
+	}
+
+	.addProduct > .addProductCartel {
+		width: 40rem;
+		height: auto;
+		border-radius: 0.5rem;
+	}
+
+	.addProduct > .addProductCartel > .styledImage {
+		height: 15rem;
+	}
+}

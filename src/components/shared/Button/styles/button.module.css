@@ -1,0 +1,23 @@
+.button,
+.iconButton {
+	border: 2px solid #ff716c;
+	padding: 0.3rem 0.8rem;
+	font-family: Google Sans;
+	font-weight: 700;
+	color: #ffffff;
+	width: 100%;
+	background-color: #e94242;
+	border-radius: 0.5rem;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+.iconButton {
+	width: 3rem;
+	height: 3rem;
+}
+
+.button:hover,
+.iconButton:hover {
+	background-color: #c02e2e;
+}

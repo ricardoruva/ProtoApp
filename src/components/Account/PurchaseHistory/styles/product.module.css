@@ -1,0 +1,48 @@
+.product {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.product > .info {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.product > .info > .title,
+.product > .info > .content {
+	font-family: Google Sans;
+	font-weight: 700;
+	font-size: 1rem;
+	color: #333333;
+	width: 60%;
+}
+
+.product > .info > .content {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	width: 40%;
+	opacity: 0.8;
+	font-weight: 500;
+}
+
+@media (min-width: 40rem) {
+	.product {
+		flex-direction: row;
+	}
+
+	.product > .info {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.product > .info > .title,
+	.product > .info > .content {
+		width: 100%;
+		text-align: center;
+	}
+}

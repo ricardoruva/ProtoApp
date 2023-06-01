@@ -1,0 +1,65 @@
+.card {
+  position: relative;
+  width: 100%;
+  height: 12rem;
+  background-color: #ffffff;
+  box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 0rem 1rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.card > .delete {
+  display: none;
+}
+
+.card:hover > .delete {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  width: 24px;
+  height: 24px;
+  color: #333333;
+  z-index: 3;
+}
+
+.card:hover > .delete:hover {
+  color: #E94242;
+}
+
+.card > .icon {
+  width: 5rem;
+  height: 5rem;
+  color: #333333;
+}
+
+.card > .info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.card > .info > h2,
+.card > .info > h3 {
+  font-family: Google Sans;
+  font-weight: 500;
+  color: #333333;
+}
+.card > .info > h3 {
+  font-weight: 400;
+}
+
+@media (min-width: 80rem) {
+  .card {
+    width: 25rem;
+  }
+}

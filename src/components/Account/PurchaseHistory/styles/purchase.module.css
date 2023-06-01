@@ -1,0 +1,115 @@
+.infoButton {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	gap: 0.1rem;
+}
+
+.infoButton > .purchaseCard {
+	display: flex;
+	flex-direction: column;
+	gap: 0.2rem;
+	background-color: #f0f5fa;
+	padding: 1rem;
+	border: 1px solid #dce3e8;
+	width: 100%;
+}
+
+.infoButton > .purchaseCard > .info {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+}
+
+.infoButton > .purchaseCard > .info > .title,
+.infoButton > .purchaseCard > .info > .content {
+	font-family: Google Sans;
+	font-weight: 700;
+	font-size: 1rem;
+	color: #333333;
+	width: 60%;
+}
+
+.infoButton > .purchaseCard > .info > .content {
+	font-weight: 500;
+	opacity: 0.8;
+	width: 40%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.infoButton > .button {
+	width: 100%;
+	height: 3rem;
+	background-color: #e94242;
+	border: 1px solid #ff716c;
+	border-top: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.infoButton > .button:hover {
+	background-color: #c02e2e;
+}
+
+.infoButton > .button > .icon {
+	width: 30px;
+	height: 30px;
+	color: #ffffff;
+	transition: all 0.3s;
+}
+
+.infoButton > .button > .selectedButton {
+	transform: rotateX(180deg);
+}
+
+.products {
+	display: flex;
+	flex-direction: column;
+	background-color: #f0f5fa;
+	padding: 1rem;
+	border: 1px solid #dce3e8;
+	width: 100%;
+	gap: 0.5rem;
+}
+
+@media (min-width: 40rem) {
+	.infoButton,
+	.infoButton > .purchaseCard {
+		flex-direction: row;
+	}
+
+	.infoButton > .purchaseCard {
+		justify-content: space-between;
+	}
+
+	.infoButton > .button {
+		min-width: 6rem;
+		max-width: 6rem;
+		min-height: 6rem;
+		height: auto;
+	}
+
+	.infoButton > .purchaseCard > .info {
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.infoButton > .purchaseCard > .info > .title,
+	.infoButton > .purchaseCard > .info > .content {
+		width: 100%;
+		text-align: center;
+		overflow: hidden;
+		white-space: normal;
+		text-overflow: ellipsis;
+	}
+
+	.products {
+		padding-right: 13.3rem;
+	}
+}

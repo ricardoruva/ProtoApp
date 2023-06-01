@@ -1,0 +1,181 @@
+.button {
+  min-width: 3rem;
+  height: 3rem;
+  color: #FFFFFF;
+  background-color: #E94242;
+  border: 2px solid #FF716C;
+  cursor: pointer;
+  padding: 0.8rem;
+  outline: none;
+  border-radius: 0.5rem;
+  transition: all 0.3s;
+}
+
+.button:hover {
+  background-color: #C02E2E;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+
+.editUserDataSection {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 101;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.editUserDataSection>.form {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 0.8rem;
+  background-color: #FFFFFF;
+  border-radius: 0.25rem;
+  width: 100%;
+}
+
+.editUserDataSection>.form>.windowTitle {
+  display: flex;
+  flex-direction: column;
+}
+
+.editUserDataSection>.form>.windowTitle>h3 {
+  font-family: Google Sans;
+  font-weight: 500;
+  color: #333333;
+  text-align: center;
+}
+
+.editUserDataSection>.form>.windowTitle>h5 {
+  font-family: Google Sans;
+  font-weight: 400;
+  color: #333333;
+  text-align: center;
+}
+
+.editUserDataSection>.form>.labelInput,
+.editUserDataSection>.form>.uploadImage>.labelInput {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.editUserDataSection>.form>.labelInput>label,
+.editUserDataSection>.form>.labelInput>.labelEmail>label,
+.editUserDataSection>.form>.labelInput>.labelEmail>.error,
+.editUserDataSection>.form>.uploadImage>.labelInput>label,
+.editUserDataSection>.form>.labelInput>.labelPassword>label,
+.editUserDataSection>.form>.labelInput>.labelPassword>.showPassword {
+  font-family: Google Sans;
+  font-weight: 400;
+  color: #333333;
+  font-size: 0.9rem;
+}
+
+.editUserDataSection>.form>.labelInput>.labelEmail>.error {
+  color: #E94242;
+}
+
+.editUserDataSection>.form>.labelInput>.labelPassword>.showPassword {
+  cursor: pointer;
+}
+
+.editUserDataSection>.form>.labelInput>.labelPassword>.showPassword:hover {
+  color: #E94242;
+}
+
+.editUserDataSection>.form>.labelInput>input {
+  font-family: Google Sans;
+  font-weight: 400;
+  color: #333333;
+  padding: 0.4rem 0.8rem;
+  outline: none;
+  border: 1px solid #CED4DA;
+  border-radius: 0.35rem;
+  background-color: #F0F5FA;
+  transition: all 0.3s;
+  width: 100%;
+}
+
+.editUserDataSection>.form>.labelInput>input:focus {
+  outline: none;
+  border-color: #80BDFF;
+  box-shadow: 0px 0px 0px 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.editUserDataSection>.form>.buttons {
+  display: flex;
+  width: 100%;
+  gap: 0.5rem;
+}
+
+.editUserDataSection>.form>.buttons>button,
+.editUserDataSection>.form>.uploadImage>.labelInput>input::file-selector-button {
+  font-family: Google Sans;
+  font-weight: 500;
+  color: #FFFFFF;
+  width: 100%;
+  background-color: #E94242;
+  border: 2px solid #FF716C;
+  cursor: pointer;
+  padding: 0.25rem 1rem;
+  outline: none;
+  border-radius: 0.5rem;
+  transition: all 0.3s;
+}
+
+.editUserDataSection>.form>.buttons>button:hover,
+.editUserDataSection>.form>.uploadImage>.labelInput>input::file-selector-button:hover {
+  background-color: #C02E2E;
+}
+
+.editUserDataSection>.form>.uploadImage {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+}
+
+.editUserDataSection>.form>.uploadImage>.profilePicture {
+  min-width: 6rem;
+	max-width: 6rem;
+  height: 6rem;
+
+  border: 1px solid #333333;
+  background-position: center;
+  background-size: cover;
+}
+
+.editUserDataSection>.form>.uploadImage>.labelInput {
+  width: calc(100% - 7rem);
+}
+
+.editUserDataSection>.form>.uploadImage>.labelInput>h5 {
+  font-family: Google Sans;
+  font-weight: 400;
+  color: #333333;
+  opacity: 0.8;
+  margin-bottom: 0.2rem;
+}
+
+@media (min-width: 40rem) {
+  .editUserDataSection>.form {
+    width: 40rem;
+  }
+}
